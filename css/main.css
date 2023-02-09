@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: radial-gradient(circle at top, hsl(214deg, 47%, 23%), hsl(237deg, 49%, 15%));
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 3.5rem;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+  border: 3px solid rgba(255, 255, 255, 0.411);
+  border-radius: 1rem;
+}
+.header img {
+  max-width: clamp(85px, 20vw, 160px);
+}
+
+.scoreboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2.5rem;
+  gap: 0.5rem;
+  background-color: #fff;
+  color: hsl(229deg, 25%, 31%);
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+.scoreboard__title {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  letter-spacing: 0.2rem;
+}
+.scoreboard__score {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: bold;
+}
+
+.start-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5rem;
+  width: clamp(320px, 50vw, 400px);
+  height: clamp(280px, 50vw, 360px);
+  background-image: url(../../images/bg-triangle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.start-game .circle-btn {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1.5rem solid transparent;
+  cursor: pointer;
+}
+.start-game #paper {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, left bottom, from(hsl(230deg, 89%, 62%)), to(hsl(230deg, 89%, 65%)));
+  background: linear-gradient(white, white) padding-box, linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
+}
+.start-game #scisorss {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, left bottom, from(hsl(39deg, 89%, 49%)), to(hsl(40deg, 84%, 53%)));
+  background: linear-gradient(white, white) padding-box, linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
+}
+.start-game #rock {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(white)) padding-box, -webkit-gradient(linear, left top, left bottom, from(hsl(349deg, 71%, 52%)), to(hsl(349deg, 70%, 56%)));
+  background: linear-gradient(white, white) padding-box, linear-gradient(hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
+}
+
+.rules {
+  width: 100%;
+  text-align: center;
+}
+.rules__btn {
+  padding: 1.5rem 3rem;
+  color: white;
+  text-transform: uppercase;
+  background: none;
+  border: 1px solid white;
+  border-radius: 1rem;
+}/*# sourceMappingURL=main.css.map */

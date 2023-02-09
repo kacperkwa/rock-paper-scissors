@@ -5,13 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
 <body>
-
-
-
-
+  <div class="wrapper">
+    <header class="header">
+      <img src="images/logo.svg" alt="logo image">
+      <div class="scoreboard">
+        <p class="scoreboard__title">score</p>
+        <p class="scoreboard__score" id="score">0</p>
+      </div>
+    </header>
+    <main class="main">
+      <section class="start-game">
+        <button class="circle-btn" id="paper"><img src="images/icon-paper.svg" alt="paper sign"></button>
+        <button class="circle-btn" id="scisorss"><img src="images/icon-scissors.svg" alt="scisorss sign"></button>
+        <button class="circle-btn" id="rock"><img src="images/icon-rock.svg" alt="rock sign"></button>
+      </section>
+    </main>
+    <section class="rules">
+      <button class="rules__btn">rules</button>
+    </section>
+  </div>
 </body>
 
 </html>

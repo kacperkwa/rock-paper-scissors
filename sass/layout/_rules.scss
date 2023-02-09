@@ -1,0 +1,13 @@
+@use '../abstracts/variables' as v;
+.rules {
+   width: 100%;
+   text-align: center;
+	&__btn {
+		padding: 1.5rem 3rem;
+		color: white;
+		text-transform: uppercase;
+		background: none;
+		border: 1px solid white;
+		border-radius: 1rem;
+	}
+}

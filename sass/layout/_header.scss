@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+body {
+	height: 100vh;
+	// max-height: 100vh;
+	background-image: radial-gradient(v.$background-gradient);
+	color: white;
+	font-family: v.$font-family;
+	// overflow: hidden;
+	padding: 3.5rem;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: clamp(1rem, 1.5rem, 2.5rem);
+	width: 100%;
+	max-width: 700px;
+	border: 3px solid rgba(255, 255, 255, 0.411);
+	border-radius: 1rem;
+	img {
+		max-width: clamp(85px, 20vw, 160px);
+	}
+}
+.scoreboard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5rem 2.5rem;
+	gap: 0.5rem;
+	background-color: #fff;
+	color: v.$dark-text;
+	text-transform: uppercase;
+	border-radius: 8px;
+	&__title {
+		font-size: clamp(1rem, 2vw, 1.4rem);
+		letter-spacing: 0.2rem;
+	}
+	&__score {
+		font-size: clamp(2.5rem, 5vw, 4.5rem);
+		font-weight: bold;
+	}
+}

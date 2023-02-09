@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as v;
+
+.start-game {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5rem;
+	width: clamp(320px, 50vw, 400px);
+	height: clamp(280px, 50vw, 360px);
+	background-image: url(../../images/bg-triangle.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	.circle-btn {
+		width: 130px;
+		height: 130px;
+		border-radius: 100%;
+		border: 1.5rem solid transparent;
+		cursor: pointer;
+	}
+	#paper {
+		background: linear-gradient(white, white) padding-box,
+			linear-gradient(v.$paper-gradient);
+	}
+	#scisorss {
+		background: linear-gradient(white, white) padding-box,
+			linear-gradient(v.$scisorss-gradient);
+	}
+	#rock {
+		background: linear-gradient(white, white) padding-box,
+			linear-gradient(v.$rock-gradient);
+	}
+}
