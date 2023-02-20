@@ -18,16 +18,41 @@
 		border: 1.5rem solid transparent;
 		cursor: pointer;
 	}
-	#paper {
-		background: linear-gradient(white, white) padding-box,
-			linear-gradient(v.$paper-gradient);
+}
+.paper-styles {
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(v.$paper-gradient);
+}
+.scissors-styles {
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(v.$scissors-gradient);
+}
+.rock-styles {
+	background: linear-gradient(white, white) padding-box,
+		linear-gradient(v.$rock-gradient);
+}
+.game-board {
+	display: none;
+	justify-content: space-between;
+	width: clamp(320px, 50vw, 400px);
+	p {
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		text-align: center;
 	}
-	#scisorss {
-		background: linear-gradient(white, white) padding-box,
-			linear-gradient(v.$scisorss-gradient);
-	}
-	#rock {
-		background: linear-gradient(white, white) padding-box,
-			linear-gradient(v.$rock-gradient);
+	.player,
+	.computer {
+		&__selection {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 130px;
+			height: 130px;
+			border-radius: 100%;
+			background-color: hsla(238, 48%, 15%, 0.247);
+			border: 1.5rem solid transparent;
+			margin-bottom: 3rem;
+		}
+		
 	}
 }

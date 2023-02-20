@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <script src="/js/app.js" defer></script>
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
 
 <body>
@@ -23,13 +24,31 @@
     </header>
     <main class="main">
       <section class="start-game">
-        <button class="circle-btn" id="paper"><img src="images/icon-paper.svg" alt="paper sign"></button>
-        <button class="circle-btn" id="scisorss"><img src="images/icon-scissors.svg" alt="scisorss sign"></button>
-        <button class="circle-btn" id="rock"><img src="images/icon-rock.svg" alt="rock sign"></button>
+        <button class="circle-btn paper-styles" id="paper"><img src="images/icon-paper.svg" alt="paper sign"></button>
+        <button class="circle-btn scissors-styles" id="scissorss"><img src="images/icon-scissors.svg"
+            alt="scisorss sign"></button>
+        <button class="circle-btn rock-styles" id="rock"><img src="images/icon-rock.svg" alt="rock sign"></button>
+      </section>
+      <section class="game-board">
+        <div class="player">
+          <div class="player__selection paper-styles"><img src="/images/icon-paper.svg" alt="player-selection-img"
+              class="player-selection-img" id="paper"></div>
+          <p>you picked</p>
+        </div>
+        <div class="computer">
+          <div class="computer__selection"><img src="" alt="computer-selection-img" class="computer-selection-img"
+              id="paper"></div>
+          <p>the house picked</p>
+        </div>
       </section>
     </main>
     <section class="rules">
       <button class="rules__btn">rules</button>
+      <div class="modal">
+        <p class="modal__title">rules</p>
+        <img src="/images/image-rules.svg" alt="game rules">
+        <button class="modal__btn"><img src="/images/icon-close.svg" alt="close icon"></button>
+      </div>
     </section>
   </div>
 </body>
