@@ -12,6 +12,7 @@ const playerCircle = document.querySelector('.player__selection');
 const playerImage = document.querySelector('.player-selection-img');
 let playerResult;
 let computerResult;
+let gameScore = 0;
 //modal hanlders
 const rulesHandler = () => {
 	modal.style.display = 'flex';
@@ -71,8 +72,6 @@ const playAgain = () => {
 const gameResult = () => {
 	const resultText = document.querySelector('.game-board__result');
 	const scoreBoard = document.querySelector('.scoreboard__score');
-	let gameScore = 0;
-	scoreBoard.textContent = `${gameScore}`;
 	if (playerResult === computerResult) {
 		resultText.textContent = `it's a draw`;
 	} else if (
@@ -81,13 +80,12 @@ const gameResult = () => {
 		(playerResult === 'rock' && computerResult === 'scissors')
 	) {
 		resultText.textContent = `you win`;
-		gameScore += 1;
-		console.log(gameScore);
+		gameScore++;
 	} else {
 		resultText.textContent = `you lose`;
-		gameScore -= 1;
-		console.log(gameScore);
+		gameScore--;
 	}
+	scoreBoard.textContent = `${gameScore}`;
 };
 
 rulesBtn.addEventListener('click', rulesHandler);
