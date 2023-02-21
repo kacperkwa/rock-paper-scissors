@@ -260,6 +260,8 @@ body {
 
 .game-board {
   display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -287,6 +289,37 @@ body {
   background-color: hsla(238deg, 48%, 15%, 0.247);
   border: 1.5rem solid transparent;
   margin-bottom: 3rem;
+}
+.game-board__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.game-board__info p {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.game-board__info button {
+  padding: 1.5rem;
+  width: 230px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: hsl(229deg, 25%, 31%);
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .rules {
